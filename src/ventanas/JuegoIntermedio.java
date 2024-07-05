@@ -305,6 +305,7 @@ public class JuegoIntermedio extends JFrame implements MouseListener {
             for (int j = 0; j < minas.length; j++) {
                 botones[i][j].setVisible(true);
                 botones[i][j].setIcon(tapaMina);
+                tiempo.detener();
                 minas[i][j].setText("0");
                 if (minas[i][j].getIcon() != null) {
                     if ((minas[i][j].getIcon().equals(imgMina)) || (minas[i][j].getIcon().equals(imgMinaExplotada))) {

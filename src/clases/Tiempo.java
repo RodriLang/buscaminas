@@ -5,7 +5,7 @@ import javax.swing.JLabel;
 
 public class Tiempo extends Thread {
 
-    private static int segundos = 0;
+    private int segundos = 0;
     private JLabel relojLabel;
     private boolean enEjecucion;
     
@@ -36,6 +36,6 @@ public class Tiempo extends Thread {
         return segundos;
     }
     public void setSegundos(int segundos) {
-        Tiempo.segundos = segundos;
+        this.segundos = segundos;
     }
 }
